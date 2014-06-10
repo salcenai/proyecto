@@ -1,0 +1,121 @@
+/* 
+    Document   : libros
+    Created on : 30-enero-2014
+    Author     : Aitor
+    Description:  Purpose of the stylesheet follows.
+*/
+
+#body{
+	width:800px;
+	margin:auto;
+	background-color:#CCCCFF;
+}
+
+#encabezado{
+	margin:auto;
+}
+/*
+root{ 
+    display: block;
+}
+*/
+h1#titulo {
+	display: inline;
+}
+
+div#div_derecha_logo {
+	position: absolute;
+	float: right;
+	width: 300px;
+	padding: 2px;
+	border: 2px solid grey;
+	top: 5px;
+	right: 5px;
+	background-color: yellow;
+}
+
+#div_menu {
+        height:50px;
+	border-radius:5px;
+	border: 2px solid grey;
+	background-color: #8888FF;
+}
+
+ul#menu {
+	margin: 5px;
+	padding: 5px;
+	list-style: none;
+	color: white;
+}
+
+li.item {
+	float: left;
+	border: 2px solid grey;
+	background-color: lightgreen;
+	padding: 5px;
+	margin: 0px 0px;
+	background-color: blue;
+}
+
+li.item:hover {
+	position: relative;
+	z-index: 1;
+	border: 2px solid grey;
+	outline: yellow dotted thick;
+}
+
+li.item a {
+	text-decoration: none;
+	color: white;
+}
+
+li.item a:visited {
+	text-decoration: none;
+}
+
+li.item a:hover {
+	color: yellow;
+}
+
+li.item a:active {
+	color: orange;
+}
+
+form {
+	margin: 5px;
+	border: 2px solid grey;
+	padding: 5px;
+	background-color: lightblue;
+}
+
+.requerido {
+	color: red;
+}
+
+
+#pie {
+	border-radius:5px;
+	margin: 10px 5px;
+	border: 2px solid grey;
+	background-color: #8888FF;
+	padding: 5px;
+}
+
+table{
+	border: 2px solid grey;
+	border-collapse: collapse;
+}
+
+table td, table th {
+	padding: 5px;
+}
+
+th{
+	background-color:#8888FF;
+}
+
+.boton{
+	color:blue;
+	text-decoration:underline;
+}
+

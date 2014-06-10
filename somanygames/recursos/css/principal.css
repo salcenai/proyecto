@@ -1,0 +1,162 @@
+/* 
+    Document   : principal
+    Created on : 31-junio-2014
+    Author     : Aitor
+*/
+
+#body{
+    width:800px;
+    margin:auto;
+    background-color:#FFCCCC;
+}
+
+#encabezado{
+    margin:auto;
+}
+
+h1#titulo {
+    display: inline;
+}
+
+#div_login {
+    background-color:#000000;
+    font-weight: bold;
+    color:#FFFFFF;
+    text-align: right;
+}
+div#div_login a:link {
+    color: #FF0000;
+}
+
+/* visited link */
+div#div_login a:visited {
+    color: #FF0000;
+}
+
+/* mouse over link */
+div#div_login a:hover {
+    color: yellow;
+}
+
+/* selected link */
+div#div_login a:active {
+    color: orange;
+}
+
+
+#div_menu {
+    height:50px;
+    border-radius:5px;
+    border: 2px solid grey;
+    background-color: #FF8888;
+}
+
+#pie{
+    border-radius:5px;
+    margin: 10px 5px;
+    border: 2px solid grey;
+    background-color: #FF8888;
+    padding: 5px;
+}
+
+ul#menu{
+    margin: 5px;
+    padding: 5px;
+    list-style: none;
+    color: white;
+}
+
+.boton{
+    color:blue;
+    text-decoration: underline;
+}
+
+/* para los li del menu */
+
+li.item {
+    float: left;
+    font-weight: bold;
+    border: 2px solid grey;
+    background-color: lightgreen;
+    padding: 5px;
+    margin: 0px 0px;
+    background-color: #FF2222;
+}
+
+li.item:hover {
+    position: relative;
+    z-index: 1;
+    border: 2px solid grey;
+    outline: yellow dotted thick;
+}
+
+li.item a {
+    text-decoration: none;
+    color: white;
+}
+
+li.item a:visited {
+    text-decoration: none;
+}
+
+li.item a:hover {
+    color: yellow;
+}
+
+li.item a:active {
+    color: orange;
+}
+
+/* los li que sean juegos */
+
+li.juego {
+    float: right;
+    font-weight: bold;
+    border: 2px solid grey;
+    background-color: lightgreen;
+    padding: 5px;
+    margin: 0px 0px;
+    background-color: #FF2222;
+}
+
+li.juego:hover {
+    position: relative;
+    z-index: 1;
+    border: 2px solid grey;
+    outline: yellow dotted thick;
+}
+
+li.juego a {
+    text-decoration: none;
+    color: white;
+}
+
+li.juego a:visited {
+    text-decoration: none;
+}
+
+li.juego a:hover {
+    color: yellow;
+}
+
+li.juego a:active {
+    color: orange;
+}
+
+/* estilos de las vistas de los juegos */
+
+#div_canvas{
+    text-align:center;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+#div_resumen{
+    text-align:justify;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+#div_puntuacion{
+    text-align:right;
+}
