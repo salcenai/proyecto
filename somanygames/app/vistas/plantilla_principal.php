@@ -22,7 +22,6 @@
        
         <script type='text/javascript' src="<?php echo URL_ROOT . "recursos" . DS . "js" . DS . "jquery" . DS . "jquery-1.10.2.min.js"; ?>" ></script>
         <script type='text/javascript' src="<?php echo URL_ROOT . "recursos" . DS . "js" . DS . "general.js"; ?>" ></script>
-        <script type="text/javascript" src=""></script>
     </head>
 
     <body id="body">
@@ -58,9 +57,9 @@
                 <?php echo \core\HTML_Tag::li_menu("item", array("inicio"), "Inicio"); ?>
                 <?php echo \core\HTML_Tag::li_menu("item", array("inicio","juegos"), "Juegos"); ?>
                 
-                <?php // echo \core\HTML_Tag::li_menu("item", array("libros"), "Libros"); ?>
                 <?php echo \core\HTML_Tag::li_menu("item", array("usuarios"), "Usuarios"); ?>
                 <?php echo \core\HTML_Tag::li_menu("item", array("roles"), "Roles"); ?>
+                <?php echo \core\HTML_Tag::li_menu("juego", array("shoottodefend"), "Shoot to defend"); ?>
                 <?php echo \core\HTML_Tag::li_menu("juego", array("snake"), "Snake"); ?>
                 <?php echo \core\HTML_Tag::li_menu("juego", array("bombs"), "Bombs"); ?>
                 <?php echo \core\HTML_Tag::li_menu("juego", array("asteroid"), "Asteroid"); ?>

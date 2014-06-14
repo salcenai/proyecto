@@ -32,24 +32,23 @@
             phpVars = new Array();
 
 <?php
-echo 'phpVars.push("' . $_POST['tamano'] . '");';
-echo 'phpVars.push("' . $_POST['explosiones'] . '");';
-echo 'phpVars.push("' . $_POST['velocidad'] . '");';
+echo 'phpVars.push("' . $_POST['variable1'] . '");';
+echo 'phpVars.push("' . $_POST['variable2'] . '");';
+echo 'phpVars.push("' . $_POST['variable3'] . '");';
 ?>
 
-            var tamano = phpVars[0];
-            var explosiones = phpVars[1];
-            var velocidad = phpVars[2];
+            var variable1 = phpVars[0];
+            var variable2 = phpVars[1];
+            var variable3 = phpVars[2];
 
-//            alert(phpVars);
+//          alert("php"+phpVars);
 
         </script>
         
-        <script type='text/javascript' src="<?php echo URL_ROOT . "recursos/js/bombs/game.js"; ?>" ></script>
+        <?php if (\core\Distribuidor::get_metodo_invocado() == "jugar"): ?>
+            <script type='text/javascript' src="<?php echo URL_ROOT . "recursos/js/".$datos['controlador_clase']."/game.js"; ?>" ></script>
+        <?php endif; ?>
         
-        <!--
-        <script type='text/javascript' src="<?php echo "http://localhost/proyecto/descargas/download" . DS . "js" .  DS . "game.js"; ?>"></script>
-        -->
     </head>
 
     <body id="body">
@@ -85,10 +84,10 @@ echo 'phpVars.push("' . $_POST['velocidad'] . '");';
                 <?php echo \core\HTML_Tag::li_menu("item", array("inicio"), "Inicio"); ?>
                 <?php echo \core\HTML_Tag::li_menu("item", array("inicio","juegos"), "Juegos"); ?>
                 
-                <?php // echo \core\HTML_Tag::li_menu("item", array("libros"), "Libros"); ?>
                 <?php echo \core\HTML_Tag::li_menu("item", array("usuarios"), "Usuarios"); ?>
                 <?php echo \core\HTML_Tag::li_menu("item", array("roles"), "Roles"); ?>
-                 <?php echo \core\HTML_Tag::li_menu("juego", array("snake"), "Snake"); ?>
+                <?php echo \core\HTML_Tag::li_menu("juego", array("shoottodefend"), "Shoot to defend"); ?>
+                <?php echo \core\HTML_Tag::li_menu("juego", array("snake"), "Snake"); ?>
                 <?php echo \core\HTML_Tag::li_menu("juego", array("bombs"), "Bombs"); ?>
                 <?php echo \core\HTML_Tag::li_menu("juego", array("asteroid"), "Asteroid"); ?>
             </ul>

@@ -22,7 +22,7 @@ var food = new Rectangle(80, 80, 10, 10);
 var score = 0; //puntuacion
 
 var wall = new Array();
-if (muros == "si") {
+if (variable3 == "si") {
     /* Posicion de los muros
      (posicion ancho,posicio alto,ancho de muro,altura de muro)
      */
@@ -63,7 +63,7 @@ if (muros == "si") {
 var gameover = true; //variable para saber si el jugador ha perdido
 
 var KEY_ENTER = 13;
-if (teclado == "flechas") {
+if (variable2 == "flechas") {
     var KEY_LEFT = 37; //variable "constante" que contiene el valor numerico de la tecla izquierda
     var KEY_UP = 38; //variable "constante" que contiene el valor numerico de la tecla arriba
     var KEY_RIGHT = 39; //variable "constante" que contiene el valor numerico de la tecla derecha
@@ -103,7 +103,7 @@ function init() {
 }
 
 function run() {
-    setTimeout(run, velocidad);
+    setTimeout(run, variable1);
 
     act();
 }

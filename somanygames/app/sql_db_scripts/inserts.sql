@@ -50,25 +50,27 @@ insert into daw2_metodos
 , ('usuarios_permisos'	,'*')
 , ('usuarios_permisos'	,'index')
 , ('usuarios_permisos'	,'form_modificar')
-, ('bombs'	,'*')
-, ('snake'	,'*')
-, ('asteroid'	,'*')
+, ('bombs'              ,'*')
+, ('snake'              ,'*')
+, ('asteroid'           ,'*')
+, ('shoottodefend'	,'*')
 ;
 
 insert into daw2_roles_permisos
-  (rol			,controlador	,metodo) values
-  ('administradores'    ,'*'		,'*')
-, ('usuarios'		,'inicio'	,'*')
-, ('usuarios'		,'mensajes'	,'*')
-, ('usuarios'		,'libros'	,'index')
-, ('usuarios_logueados'	,'inicio'	,'*')
-, ('usuarios_logueados'	,'libros'	,'index')
-, ('usuarios_logueados' ,'libros'	,'form_insertar')
-, ('usuarios_logueados' ,'usuarios'	,'desconectar')
-, ('usuarios_logueados' ,'usuarios'	,'form_cambiar_password')
-, ('usuarios_logueados' ,'bombs'	,'*')
-, ('usuarios_logueados' ,'snake'	,'*')
-, ('usuarios_logueados' ,'asteroid'	,'*')
+  (rol			,controlador            ,metodo) values
+  ('administradores'    ,'*'                    ,'*')
+, ('usuarios'		,'inicio'               ,'*')
+, ('usuarios'		,'mensajes'             ,'*')
+, ('usuarios'		,'libros'               ,'index')
+, ('usuarios_logueados'	,'inicio'               ,'*')
+, ('usuarios_logueados'	,'libros'               ,'index')
+, ('usuarios_logueados' ,'libros'               ,'form_insertar')
+, ('usuarios_logueados' ,'usuarios'             ,'desconectar')
+, ('usuarios_logueados' ,'usuarios'             ,'form_cambiar_password')
+, ('usuarios_logueados' ,'bombs'                ,'*')
+, ('usuarios_logueados' ,'snake'                ,'*')
+, ('usuarios_logueados' ,'asteroid'             ,'*')
+, ('usuarios_logueados' ,'shoottodefend'	,'*')
 
 ;
 

@@ -4,21 +4,21 @@
     
         <br />
 	Velocidad:<br />
-        <input type="radio" name="velocidad" value="80">Muy lenta<br>
-        <input type="radio" name="velocidad" value="65">Lenta<br>
-        <input type="radio" name="velocidad" value="50" checked >Normal<br>
-        <input type="radio" name="velocidad" value="35">Rápida<br>
-        <input type="radio" name="velocidad" value="20">Muy rápida<br>
+        <input type="radio" name="variable1" value="80">Muy lenta<br>
+        <input type="radio" name="variable1" value="65">Lenta<br>
+        <input type="radio" name="variable1" value="50" checked >Normal<br>
+        <input type="radio" name="variable1" value="35">Rápida<br>
+        <input type="radio" name="variable1" value="20">Muy rápida<br>
         
         <br />
         Teclado:<br />
-        <input type="radio" name="teclado" value="flechas" checked >Flechas<br>
-        <input type="radio" name="teclado" value="wasd">WASD<br>
+        <input type="radio" name="variable2" value="flechas" checked >Flechas<br>
+        <input type="radio" name="variable2" value="wasd">WASD<br>
         
         <br />
         Muros:<br />
-        <input type="radio" name="muros" value="si" checked >Si<br>
-        <input type="radio" name="muros" value="no">No<br>
+        <input type="radio" name="variable3" value="si" checked >Si<br>
+        <input type="radio" name="variable3" value="no">No<br>
         
         
         

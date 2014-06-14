@@ -1,7 +1,7 @@
 <?php
 namespace controladores;
 
-class snake extends \core\Controlador {
+class shoottodefend extends \core\Controlador {
 	
 	public function index(array $datos = array()) {
 

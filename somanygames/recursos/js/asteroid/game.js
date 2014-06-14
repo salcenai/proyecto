@@ -13,7 +13,7 @@
     var KEY_ENTER=13;
     var KEY_SPACE=32;
     
-    if (teclado == "flechas") {
+    if (variable3 == "flechas") {
         var KEY_LEFT = 37; //variable "constante" que contiene el valor numerico de la tecla izquierda
         var KEY_UP = 38; //variable "constante" que contiene el valor numerico de la tecla arriba
         var KEY_RIGHT = 39; //variable "constante" que contiene el valor numerico de la tecla derecha
@@ -104,7 +104,7 @@
         waveTimer=40;
         wave=1;
         score=0;
-        lives=vidas; //vidas al empezar
+        lives=variable1; //vidas al empezar
     }
 
     function act(){
@@ -143,7 +143,7 @@
                 var s=new Circle(player.x,player.y,2.5);
                 s.rotation=player.rotation;
                 s.speed=player.speed+10; //velocidad de proyectil
-                s.timer=distancia; //tiempo de proyectil
+                s.timer=variable2; //tiempo de proyectil
                 shots.push(s);
             }
             

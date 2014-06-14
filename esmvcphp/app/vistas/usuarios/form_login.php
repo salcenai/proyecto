@@ -8,7 +8,7 @@
 		Password: <input type='password' id='password' name='password' maxsize='50' value='<?php echo \core\Datos::values('password', $datos) ?>'/><span class='requerido'>Requerido</span><?php echo \core\HTML_Tag::span_error('password', $datos); ?><br />
 		<br />	
 
-		<?php echo \core\HTML_Tag::span_error('validacion', $datos);?><br />
+		<?php echo \core\HTML_Tag::span_error('validacion', $datos);?>
 
 		<?php
 		if (\core\Configuracion::$form_login_catcha) {
@@ -18,7 +18,7 @@
 		}
 		?>
 
-		<input type='submit' value='enviar' />
-		<input type='button' value='cancelar' onclick='window.location.assign("<?php echo \core\URL::generar("inicio"); ?>");'/>
+		<input type='submit' value='Enviar' />
+		<input type='button' value='Cancelar' onclick='window.location.assign("<?php echo \core\URL::generar("inicio"); ?>");'/>
 	</form>
 </div>

@@ -4,6 +4,7 @@
             <td><b>Snake</b></td>
             <td><b>Bombs</b></td>
             <td><b>Asteroid</b></td>
+            <td><b>Shoot to defend</b></td>
         </tr>
         <tr>
             <td>
@@ -19,6 +20,11 @@
             <td>
                 <a href='<?php echo \core\URL::generar("asteroid/index") ?>'>
                     <img width="150" height="150" src='<?php echo URL_ROOT; ?>recursos/imagenes/asteroid.png' />
+                </a>
+            </td>
+            <td>
+                <a href='<?php echo \core\URL::generar("shoottodefend/index") ?>'>
+                    <img width="150" height="150" src='<?php echo URL_ROOT; ?>recursos/imagenes/shoottodefend.png' />
                 </a>
             </td>
         </tr>

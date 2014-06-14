@@ -15,7 +15,7 @@
     var gameover = true;
     var score = 0;
     var eTimer = 0;
-    var player = new Circle(0,0,Number(tamano)); //Tercer parametro igual al radio en pixeles del circulo del jugador
+    var player = new Circle(0,0,Number(variable1)); //Tercer parametro igual al radio en pixeles del circulo del jugador
     var bombs=[];
     
     // asignacion de imagenes de las bombas
@@ -100,7 +100,7 @@
             if(eTimer<0){
                 var bomb=new Circle(random(2)*canvas.width,random(2)*canvas.height,10);
                 bomb.timer=1.5+random(2.5);
-                bomb.speed=Number(velocidad)+((random(score))*10);
+                bomb.speed=Number(variable3)+((random(score))*10);
                 bombs.push(bomb);
                 eTimer=0.5+random(2.5);
             }
@@ -114,6 +114,18 @@
                     continue;
                 }
                 
+                if(bombs[i].distance(player)<0){ //en caso en el que colisione la bomba antes de explotar
+                    // Partida perdida
+
+                    audioExplosion = new Audio('../../recursos/sound/bombs/explosion.mp3');
+                    audioExplosion.play();
+
+                    gameover=true;
+                    pause=true;
+                    establecerPuntuacion(); //ejecuta el metodo de guardado de mejor puntuacion
+                }
+                
+                
                 bombs[i].timer-=deltaTime;
                 var angle=player.getAngle(bombs[i]);
                 bombs[i].move(angle,bombs[i].speed*deltaTime);
@@ -121,9 +133,9 @@
                 if(bombs[i].timer<0){
                     audioExplosion = new Audio('../../recursos/sound/bombs/explosion.mp3');
                     audioExplosion.play();
-                    bombs[i].radius*=Number(explosiones); // Aumenta el radio de la explosion de la bomba
-                    if(bombs[i].distance(player)<0){
-						// Partida perdida
+                    bombs[i].radius*=Number(variable2); // Aumenta el radio de la explosion de la bomba
+                    if(bombs[i].distance(player)<0){ // en caso de que la explosion te de
+			// Partida perdida
                         
                         gameover=true;
                         pause=true;

@@ -8,7 +8,7 @@ class asteroid extends \core\Controlador {
 		$datos["form_name"] = __FUNCTION__;
                 
 		$datos['view_content'] = \core\Vista::generar(__FUNCTION__, $datos);
-		$http_body = \core\Vista_Plantilla::generar('plantilla_asteroid', $datos);
+		$http_body = \core\Vista_Plantilla::generar('plantilla_juego', $datos);
 		\core\HTTP_Respuesta::enviar($http_body);
 		
 	}
@@ -16,7 +16,7 @@ class asteroid extends \core\Controlador {
         public function jugar(array $datos=array()) {
 		
 		$datos['view_content'] = \core\Vista::generar(__FUNCTION__, $datos);
-		$http_body = \core\Vista_Plantilla::generar('plantilla_asteroid', $datos);
+		$http_body = \core\Vista_Plantilla::generar('plantilla_juego', $datos);
 		\core\HTTP_Respuesta::enviar($http_body);
 		
 	}
